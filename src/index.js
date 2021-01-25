@@ -21,16 +21,23 @@ function displayWeather(response) {
   )}°C`;
 }
 
-function search(event) {
-  event.preventDefault();
+function search(city) {
   let apiKey = "11a6bd137d38c9eff9b66fb017459c47";
-  let city = document.querySelector("#search-form").value;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeather);
+}
 
+function handleSubmit(event) {
+  event.preventDefault();
+  let city = document.querySelector("#search-form").value;
   let searchInput = document.querySelector("#search-form");
   let h1 = document.querySelector("h1");
   h1.innerHTML = searchInput.value;
+  search(city);
+  
 }
+
 let form = document.querySelector("form");
-form.addEventListener("submit", search);
+form.addEventListener("submit", handleSubmit);
+
+search("Aarhus");
