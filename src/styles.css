@@ -4,7 +4,7 @@ body {
 h1,
 h2,
 h3 {
-  color: blue;
+  color: #19167e;
 }
 h1 {
   margin-bottom: 0;
@@ -19,6 +19,26 @@ h3 {
 
 a {
   color: blue;
+}
+
+button {
+  background-color: #19167e;
+  color: white;
+  border: 1px solid #12121b;
+  border-radius: 10px;
+  padding: 5px 10px;
+  transition: all 200ms ease-in-out;
+}
+
+button:hover {
+  background: #62aaff;
+  color: black;
+  cursor: pointer;
+}
+
+form {
+  border-radius: 10px;
+  padding: 5px 10px;
 }
 
 .fa-cloud {
