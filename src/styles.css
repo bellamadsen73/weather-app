@@ -36,11 +36,6 @@ button:hover {
   cursor: pointer;
 }
 
-form {
-  border-radius: 10px;
-  padding: 5px 10px;
-}
-
 .fa-cloud {
   font-size: 100px;
 }
