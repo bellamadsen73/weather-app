@@ -26,7 +26,10 @@ li {
 
 a {
   color: blue;
-  margin: 0 auto;
+}
+
+p {
+  text-align: center;
 }
 
 button {
@@ -48,7 +51,6 @@ button:hover {
   border: 1px solid black;
   max-width: 600px;
   margin: 0 auto;
-  margin-bottom: 10px;
   background-image: linear-gradient(#fd72c3, #bb83ff, #59aeff);
   padding: 20px;
   border-radius: 10px;
@@ -62,7 +64,7 @@ button:hover {
   padding-right: 20px;
   margin: 0 auto;
   margin-top: 15px;
-  margin-bottom: 90px;
+  margin-bottom: 50px;
   background-color: #f895cf;
   border: 1px solid #19167e;
   box-shadow: 5px 5px 5px rgb(22, 22, 22);
