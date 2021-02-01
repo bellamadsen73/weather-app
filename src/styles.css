@@ -40,9 +40,10 @@ button:hover {
   font-size: 100px;
 }
 .card {
-  width: 30%;
+  width: 32%;
   padding-right: 20px;
-  margin-bottom: 155px;
+  margin-top: 15px;
+  margin-bottom: 110px;
 }
 .row {
   margin-top: 30px;

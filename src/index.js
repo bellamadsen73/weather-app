@@ -21,7 +21,7 @@ function displayWeather(response) {
   document.querySelector("h1").innerHTML = response.data.name;
   document.querySelector("h3").innerHTML = `${Math.round(
     response.data.main.temp
-  )}°C`;
+)}°C | °F`;
 }
 
 function searchLocation(position) {
