@@ -1,5 +1,4 @@
 body {
-  background-image: linear-gradient(#fd72c3, #bb83ff, #59aeff);
   max-width: 100%;
   margin: 0 auto;
 }
@@ -17,6 +16,12 @@ h2 {
 
 h3 {
   margin-bottom: 60px;
+}
+
+li {
+  list-style: none;
+  line-height: 18px;
+  color: #19167e;
 }
 
 a {
@@ -38,14 +43,23 @@ button:hover {
   cursor: pointer;
 }
 
+.wrapper {
+  border: 1px solid black;
+  max-width: 600px;
+  margin: 0 auto;
+  background-image: linear-gradient(#fd72c3, #bb83ff, #59aeff);
+  padding: 20px;
+}
+
 .fa-cloud {
   font-size: 100px;
 }
 .card {
-  width: 32%;
+  width: 90%;
   padding-right: 20px;
+  margin: 0 auto;
   margin-top: 15px;
-  margin-bottom: 110px;
+  margin-bottom: 90px;
   background-color: #f895cf;
   border: 1px solid #19167e;
   box-shadow: 5px 5px 5px rgb(22, 22, 22);
