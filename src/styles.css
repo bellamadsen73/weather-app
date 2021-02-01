@@ -1,5 +1,7 @@
 body {
   background-image: linear-gradient(#fd72c3, #bb83ff, #59aeff);
+  max-width: 100%;
+  margin: 0 auto;
 }
 h1,
 h2,
@@ -44,7 +46,30 @@ button:hover {
   padding-right: 20px;
   margin-top: 15px;
   margin-bottom: 110px;
+  background-color: #f895cf;
+  border: 1px solid #19167e;
+  box-shadow: 5px 5px 5px rgb(22, 22, 22);
 }
 .row {
   margin-top: 30px;
+}
+
+#search-button {
+  background-color: #19167e;
+  color: white;
+  border: 1px solid #12121b;
+  border-radius: 10px;
+  padding: 5px 10px;
+  transition: all 200ms ease-in-out;
+}
+#search-button:hover {
+  background: #62aaff;
+  color: black;
+  cursor: pointer;
+}
+
+#search-form {
+  border: 1px solid #12121b;
+  border-radius: 10px;
+  padding: 5px 10px;
 }
