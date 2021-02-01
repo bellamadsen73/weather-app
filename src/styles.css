@@ -26,6 +26,7 @@ li {
 
 a {
   color: blue;
+  margin: 0 auto;
 }
 
 button {
@@ -47,8 +48,10 @@ button:hover {
   border: 1px solid black;
   max-width: 600px;
   margin: 0 auto;
+  margin-bottom: 10px;
   background-image: linear-gradient(#fd72c3, #bb83ff, #59aeff);
   padding: 20px;
+  border-radius: 10px;
 }
 
 .fa-cloud {
@@ -64,6 +67,7 @@ button:hover {
   border: 1px solid #19167e;
   box-shadow: 5px 5px 5px rgb(22, 22, 22);
 }
+
 .row {
   margin-top: 30px;
 }
