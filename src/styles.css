@@ -1,6 +1,7 @@
 body {
   max-width: 100%;
   margin: 0 auto;
+  background-image: linear-gradient(#fd72c3, #bb83ff, #59aeff);
 }
 h1,
 h2,
