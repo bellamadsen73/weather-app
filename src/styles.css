@@ -22,6 +22,7 @@ li {
   list-style: none;
   line-height: 18px;
   color: #19167e;
+  text-transform: capitalize;
 }
 
 a {
@@ -56,8 +57,9 @@ button:hover {
   border-radius: 10px;
 }
 
-.fa-cloud {
-  font-size: 100px;
+img {
+  width: 60px;
+  height: 60px;
 }
 .card {
   width: 90%;
