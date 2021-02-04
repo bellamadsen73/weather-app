@@ -60,10 +60,19 @@ function handleSubmit(event) {
   
 }
 
+function showFahrenheit(event) {
+event.preventDefault();
+let fahrenheitTemperature = (14 * 90) / 5 + 32;
+alert(fahrenheitTemperature);
+}
+
 let form = document.querySelector("form");
 form.addEventListener("submit", handleSubmit);
 
 let currentLocation = document.querySelector("button");
 currentLocation.addEventListener("click", getCurrentLocation);
+
+let fahrenheitLink = document.querySelector("#fahrenheit");
+fahrenheitLink.addEventListener("click", showFahrenheit);
 
 searchCity("Aarhus");
