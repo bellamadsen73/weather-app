@@ -19,7 +19,7 @@ h2.innerHTML = `${day} ${hour}:${minutes}`;
 
 function displayWeather(response) {
   document.querySelector("h1").innerHTML = response.data.name;
-  document.querySelector("h3").innerHTML = `${Math.round(response.data.main.temp)}°C | °F`;
+  document.querySelector("h3").innerHTML = `${Math.round(response.data.main.temp)}<span class="units">°C |<a href="#" id="fahrenheit">°F</a></span>`;
 let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML = response.data.weather[0].description;
   let humidityElement = document.querySelector("#humidity");
