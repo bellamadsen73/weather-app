@@ -15,11 +15,14 @@ let minutes = now.getMinutes();
 if (minutes < 10) {
   minutes = `0${minutes}`
 }
-h2.innerHTML = `${day} ${hour}:${minutes}`;
+h2.innerHTML = `Last updated: ${day} ${hour}:${minutes}`;
 
 function displayWeather(response) {
   document.querySelector("h1").innerHTML = response.data.name;
-  document.querySelector("h3").innerHTML = `${Math.round(response.data.main.temp)}<span class="units">°C |<a href="#" id="fahrenheit">°F</a></span>`;
+  document.querySelector("h3").innerHTML = `${Math.round(response.data.main.temp)}`;
+
+  celsiusTemperature = response.data.main.temp;
+
 let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML = response.data.weather[0].description;
   let humidityElement = document.querySelector("#humidity");
@@ -62,9 +65,22 @@ function handleSubmit(event) {
 
 function showFahrenheit(event) {
 event.preventDefault();
-let fahrenheitTemperature = (14 * 90) / 5 + 32;
-alert(fahrenheitTemperature);
+let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+let temperatureElement = document.querySelector("#temperature");
+temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+celsiusLink.classList.remove("active");
+fahrenheitLink.classList.add("active");
 }
+
+function showCelsius(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+celsiusLink.classList.add("active");
+fahrenheitLink.classList.remove("active");
+}
+
+let celsiusTemperature = null;
 
 let form = document.querySelector("form");
 form.addEventListener("submit", handleSubmit);
@@ -74,5 +90,8 @@ currentLocation.addEventListener("click", getCurrentLocation);
 
 let fahrenheitLink = document.querySelector("#fahrenheit");
 fahrenheitLink.addEventListener("click", showFahrenheit);
+
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", showCelsius);
 
 searchCity("Aarhus");

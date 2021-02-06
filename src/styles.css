@@ -10,13 +10,15 @@ h3 {
 }
 h1 {
   margin-bottom: 0;
+  font-size: 45px;
 }
 h2 {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 h3 {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+  font-size: 35px;
 }
 
 li {
@@ -26,12 +28,12 @@ li {
   text-transform: capitalize;
 }
 
-a {
-  color: blue;
-}
-
 p {
   text-align: center;
+}
+
+a {
+  color: #19167e;
 }
 
 button {
@@ -62,6 +64,13 @@ img {
   width: 100px;
   height: 100px;
 }
+
+.degrees {
+  font-size: 18px;
+  padding: 5px;
+  color: #19167e;
+}
+
 .card {
   width: 90%;
   padding-right: 20px;
@@ -95,4 +104,13 @@ img {
   border: 1px solid #12121b;
   border-radius: 10px;
   padding: 5px 10px;
+}
+
+.weather-temperature .active {
+  color: #19167e;
+  cursor: default;
+  text-decoration: none;
+}
+.weather-temperature .active:hover {
+  text-decoration: none;
 }
