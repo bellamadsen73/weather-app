@@ -40,17 +40,22 @@ function searchLocation(position) {
     position.coords.latitude
   }&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeather);
+ 
 }
 
 function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
+  fahrenheitLink.classList.remove("active");
+  celsiusLink.classList.add("active");
 }
 
 function searchCity(city) {
   let apiKey = "11a6bd137d38c9eff9b66fb017459c47";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeather);
+   fahrenheitLink.classList.remove("active");
+  celsiusLink.classList.add("active");
 }
 
 function handleSubmit(event) {
