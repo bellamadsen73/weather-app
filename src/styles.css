@@ -1,12 +1,6 @@
 body {
   max-width: 100%;
-  background-image: linear-gradient(
-    #e7b0d0,
-    #c6b8d6,
-    #c3d6e7,
-    #c6b8d6,
-    #e7b0d0
-  );
+  background-image: linear-gradient(#c6b8d6, #c3d6e7, #c6b8d6);
 }
 h1,
 h2,
