@@ -2,6 +2,7 @@ body {
   max-width: 100%;
   background-image: linear-gradient(#c6b8d6, #c3d6e7, #c6b8d6);
 }
+
 h1,
 h2,
 h3 {
@@ -10,9 +11,11 @@ h3 {
 h1 {
   margin-bottom: 0;
   font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 h2 {
-  font-size: 20px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h3 {
@@ -25,6 +28,7 @@ li {
   line-height: 18px;
   color: #19167e;
   text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
